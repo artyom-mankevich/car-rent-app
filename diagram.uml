@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>8f826f91-bf20-4626-9a34-1db098a49a4a</OriginalElement>
+  <nodes>
+    <node x="595.664351851852" y="0.0">8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.log_actor</node>
+    <node x="0.0" y="0.0">8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.vehicle_model</node>
+    <node x="154.1643518518519" y="535.0">8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.order_item</node>
+    <node x="327.1643518518519" y="548.5">8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.user</node>
+    <node x="256.0" y="40.5">8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.dealer</node>
+    <node x="168.66666666666669" y="762.0">8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.order</node>
+    <node x="585.164351851852" y="146.0">8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.log</node>
+    <node x="160.1643518518519" y="335.0">8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.car</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.car" target="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.vehicle_model" relationship="REFERENCES">
+      <point x="-35.25" y="-75.0" />
+      <point x="195.4143518518519" y="310.0" />
+      <point x="118.0" y="310.0" />
+      <point x="0.0" y="142.5" />
+    </edge>
+    <edge source="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.log" target="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.log_actor" relationship="REFERENCES">
+      <point x="0.0" y="-75.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.car" target="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.dealer" relationship="REFERENCES">
+      <point x="35.25" y="-75.0" />
+      <point x="265.9143518518519" y="310.0" />
+      <point x="346.0" y="310.0" />
+      <point x="0.0" y="102.0" />
+    </edge>
+    <edge source="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.order_item" target="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.car" relationship="REFERENCES">
+      <point x="0.0" y="-88.5" />
+      <point x="0.0" y="75.0" />
+    </edge>
+    <edge source="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.order" target="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.user" relationship="REFERENCES">
+      <point x="63.333333333333314" y="-88.5" />
+      <point x="327.0" y="737.0" />
+      <point x="433.6643518518519" y="737.0" />
+      <point x="0.0" y="75.0" />
+    </edge>
+    <edge source="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.order" target="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.order_item" relationship="REFERENCES">
+      <point x="0.0" y="-88.5" />
+      <point x="263.6666666666667" y="737.0" />
+      <point x="268.9143518518519" y="737.0" />
+      <point x="38.25" y="88.5" />
+    </edge>
+    <edge source="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.order_item" target="8f826f91-bf20-4626-9a34-1db098a49a4a.TABLE:kursach_db.order" relationship="REFERENCES">
+      <point x="-38.25" y="88.5" />
+      <point x="192.4143518518519" y="737.0" />
+      <point x="200.33333333333334" y="737.0" />
+      <point x="-63.33333333333334" y="-88.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8717413972888426" showDependencies="false" x="411.0" y="469.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
